@@ -1,0 +1,16 @@
+.buttons {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  grid-area: 8 / 1 / 9 / 3;
+}
+
+.backButton {
+}
+
+.hideButton {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
