@@ -26,8 +26,9 @@
 .slider {
   /* max-height: 70%; */
   /* width: 80%; */
-  width: 560px;
-  height: 583px;
+  height: 433px;
+  width: 581px;
+  /* object-fit: cover; */
   margin: 0 auto;
   margin-top: 56px;
   border: 6px solid #fcbd59;
@@ -38,12 +39,15 @@
 
 .slide {
   width: 100%;
+  height: 413px;
 }
 
 .slideImage {
   max-width: 100%;
-  height: auto;
+  height: 422px;
   object-fit: cover;
+  border-radius: 0 0 35px 35px;
+  overflow: hidden;
   margin: 0 auto;
 }
 /* Кастомные стрелки */
