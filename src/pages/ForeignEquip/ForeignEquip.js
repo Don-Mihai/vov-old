@@ -294,6 +294,7 @@ const ForeignEquip = () => {
   return (
     <PodMain
       titleColor={'#333E6F'}
+      tabsColor={'#4C569A'}
       title={'ВООРУЖЕНИЕ ПРОТИВНИКА'}
       slides={slidesForeign}
       tabs={tabs}

@@ -22,14 +22,20 @@ function PrevArrow({ className, style, onClick }) {
   );
 }
 
-export default function PodMain({ titleColor, title, slides, tabs }) {
+export default function PodMain({
+  titleColor,
+  tabsColor,
+  title,
+  slides,
+  tabs,
+}) {
   const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   const [dragging, setDragging] = useState(false);
 
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -55,22 +61,33 @@ export default function PodMain({ titleColor, title, slides, tabs }) {
   };
   console.log(slides, activeTab);
   return (
-    <div className={'container'} style={{ '--title-bg-color': titleColor }}>
+    <div
+      className={'container'}
+      style={{ '--title-bg-color': titleColor, '--tabs-bg-color': tabsColor }}
+    >
       <div className={'leftColumn' + ' ' + styles.column}>
         <h3 className={styles.title}>{title}</h3>
         <Slider {...sliderSettings} className={styles.slider}>
           {slides[activeTab].map((slide) => (
-            <div className={styles.slide} key={slide.id}>
-              <img
-                src={slide.src}
-                alt={slide.title}
-                className={styles.slideImage}
+            <div className={styles.slideCont} key={slide.id}>
+              <div className={styles.slide} key={slide.id}>
+                <img
+                  src={slide.src}
+                  alt={slide.title}
+                  className={styles.slideImage}
+                  onClick={() => handleSlideClick(slide.link)}
+                />
+              </div>
+              <button
                 onClick={() => handleSlideClick(slide.link)}
-              />
+                className={styles.buttonDetail}
+              >
+                Подробнее
+              </button>
             </div>
           ))}
         </Slider>
-        <button className={styles.buttonDetail}>Подробнее</button>
+        {/* <button className={styles.buttonDetail}>Подробнее</button> */}
         <h2 className={styles.slideTitle}>
           {slides[activeTab][currentSlide].title}
         </h2>

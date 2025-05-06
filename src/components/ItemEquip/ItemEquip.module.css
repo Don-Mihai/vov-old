@@ -1,14 +1,12 @@
 .title {
   width: 100%;
-  padding: 5px 20px 5px 30px;
-  margin-left: -10px;
-  margin-bottom: 56px;
+  padding: 20px 0 20px 50px;
+  /* margin-left: -10px; */
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
-  background: #782122;
+  background: var(--title-bg-color);
   color: #fff;
   font-size: 36px;
-  text-transform: uppercase;
 }
 
 .image {

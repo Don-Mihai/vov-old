@@ -7,6 +7,7 @@ const RussianItem = () => {
   const item = slidesForeign[tab].find((item) => item.id === Number(id));
   return (
     <ItemEquip
+      titleColor={'#333E6F'}
       title={item.title}
       src={item.src}
       description={item.description}
