@@ -76,8 +76,16 @@ h6 {
 }
 
 @font-face {
+  font-family: 'Main';
+  src: local('Main'), url('./font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Calibri';
-  src: local('Calibri'), url('./main.otf') format('truetype');
+  src: local('Calibri'), url('./calibri/calibri.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -85,7 +93,8 @@ h6 {
 
 body {
   margin: 0;
-  font-family: 'Calibri', sans-serif;
+  font-family: 'Main', sans-serif;
+  letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
