@@ -8,9 +8,10 @@ export default function ItemEquip({ title, description, src, titleColor }) {
       <div className={'leftColumn'}>
         <h3 className={styles.title}>{title}</h3>
         <img src={src} alt={title} className={styles.image} />
+      </div>
+      <div className={'rightColumn'}>
         <p className={styles.description}>{description}</p>
       </div>
-      <div className={'rightColumn'}></div>
 
       <Bottom backUrl={-1} />
     </div>
