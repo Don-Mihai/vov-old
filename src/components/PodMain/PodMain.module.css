@@ -43,19 +43,24 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* overflow: hidden; */
 }
 
 .slide {
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: 413px;
+  height: 421px;
+  overflow: hidden;
+  border-radius: 0 0 35px 35px;
 }
 
 .slideImage {
   max-width: 100%;
-  height: 422px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 0 0 35px 35px;
-  overflow: hidden;
+  /* border-radius: 0 0 35px 35px; */
   margin: 0 auto;
 }
 /* Кастомные стрелки */
