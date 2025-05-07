@@ -17,7 +17,7 @@ export default function Preview() {
     >
       <video
         className={styles.video}
-        src="/videos/video.mp4"
+        src="/videos/video-text.mp4"
         autoPlay
         loop
         muted
