@@ -18,7 +18,7 @@ const Bottom = ({ backUrl }) => {
       <OutlinedButton
         customClass={styles.hideButton}
         onClick={handleHide}
-        text={'Скрыть все элементы'}
+        text={'Скрыты все элементь'}
       />
     </div>
   );
